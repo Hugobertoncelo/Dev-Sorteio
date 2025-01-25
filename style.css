@@ -67,3 +67,32 @@ button:hover {
 button:active {
   opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+  .input-container {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .input-min {
+      margin-right: 0; 
+      margin-bottom: 1rem;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  .input-group {
+      text-align: center;
+  }
+
+  input, button {
+      font-size: 1.2rem;
+      height: 60px;
+  }
+
+  img {
+      width: 40vh;
+  }
+}
