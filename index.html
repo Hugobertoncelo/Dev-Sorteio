@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Random</title>
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   </head>
   <body>
-    <img src="./assets/dados.png" alt="" />
+    <img src="./assets/dados.png" alt="Imagem de dados" class="floating-img" />
+    <h1>Sorteador</h1>
 
     <h2>Sortear um Número</h2>
+
     <div class="input-group">
       <input placeholder="entre" class="input-min" type="number" />
       <input placeholder="e" class="input-max" type="number" />
@@ -17,6 +20,9 @@
 
     <button onclick="generateNumber()">Sortear</button>
 
+    <div id="error-message" class="error-message"></div>
+    <div id="result" class="result-display"></div>
+
+    <script src="script.js"></script>
   </body>
-  <script src="./script.js"></script>
 </html>
